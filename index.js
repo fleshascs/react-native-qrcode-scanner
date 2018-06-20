@@ -101,6 +101,7 @@ export default class QRCodeScanner extends Component {
   }
 
   componentWillMount() {
+    /* //react-native-camera praso premission pati
     if (Platform.OS === 'ios') {
       Permissions.request(CAMERA_PERMISSION).then(response => {
         this.setState({
@@ -108,6 +109,7 @@ export default class QRCodeScanner extends Component {
           isAuthorizationChecked: true
         });
       });
+      */
     } else if (Platform.OS === 'android' && this.props.checkAndroid6Permissions) {
       PermissionsAndroid.request(PermissionsAndroid.PERMISSIONS.CAMERA, {
           'title': this.props.permissionDialogTitle,
