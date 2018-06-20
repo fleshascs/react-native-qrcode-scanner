@@ -109,8 +109,8 @@ export default class QRCodeScanner extends Component {
           isAuthorizationChecked: true
         });
       });
-      */
-    } else if (Platform.OS === 'android' && this.props.checkAndroid6Permissions) {
+      
+    } else */ if (Platform.OS === 'android' && this.props.checkAndroid6Permissions) {
       PermissionsAndroid.request(PermissionsAndroid.PERMISSIONS.CAMERA, {
           'title': this.props.permissionDialogTitle,
           'message':  this.props.permissionDialogMessage,
